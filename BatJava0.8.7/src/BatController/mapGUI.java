@@ -36,7 +36,7 @@ public class mapGUI {
 		mapFrame.setDefaultCloseOperation( WindowConstants.DISPOSE_ON_CLOSE );// allows the map to close separate from main GUI
 		serialClass = instance;
 	}
-
+ 
 	/**
 	 * inner class
 	 * @author S Murphy
