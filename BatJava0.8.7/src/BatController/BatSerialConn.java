@@ -108,33 +108,33 @@ public class BatSerialConn implements SerialPortEventListener {
 		}
 
 		// Centre Sonar Panel
-		GUI.txtCenterFrontSonarDistInch.setText(sensorDataGetSet.getCentSonarInches());
-		GUI.txtCenterFrontSonarDistCM.setText(Double.toString((Double.parseDouble(sensorDataGetSet.getCentSonarInches()) * 2.54)));
+		GuiSensorReadings.txtCenterFrontSonarDistInch.setText(sensorDataGetSet.getCentSonarInches());
+		GuiSensorReadings.txtCenterFrontSonarDistCM.setText(Double.toString((Double.parseDouble(sensorDataGetSet.getCentSonarInches()) * 2.54)));
 		
 		// Left Front Sonar Panel
-		GUI.txtLeftFrontSonarDistInch.setText(leftFrontSonarInches);
-		GUI.txtLeftFrontSonarDistCM.setText(Double.toString((Double.parseDouble(sensorDataGetSet.getFLSonarInches()) * 2.54)));
+		GuiSensorReadings.txtLeftFrontSonarDistInch.setText(leftFrontSonarInches);
+		GuiSensorReadings.txtLeftFrontSonarDistCM.setText(Double.toString((Double.parseDouble(sensorDataGetSet.getFLSonarInches()) * 2.54)));
 
 		// Left Side Sonar Panel
-		// GUI.txtLeftSideSonarDistInch.setText(leftSideSonarInches);
+		GuiSensorReadings.txtLeftSideSonarDistInch.setText(compassAngle);
 		// GUI.txtLeftSideSonarDistCM.setText(Double.toString((Double.parseDouble(leftSideSonarInches) * 2.54)));
 
 		// Right Front Sonar Panel
-		GUI.txtRightFrontSonarDistInch.setText(rightFrontSonarInches);
-		GUI.txtRightFrontSonarDistCM.setText(Double.toString((Double.parseDouble(rightFrontSonarInches) * 2.54)));
+		GuiSensorReadings.txtRightFrontSonarDistInch.setText(rightFrontSonarInches);
+		GuiSensorReadings.txtRightFrontSonarDistCM.setText(Double.toString((Double.parseDouble(rightFrontSonarInches) * 2.54)));
 
 		// Right Side Sonar Panel
 		// GUI.txtRightSideSonarDistInch.setText(rightSideSonarInches);
 		// GUI.txtRightSideSonarDistCM.setText(Double.toString((Double.parseDouble(rightSideSonarInches) * 2.54)));
 
 		// Rear Sonar Panel
-		GUI.txtRearSonarDistInch.setText(sensorDataGetSet.getbackSonarInches());
-		GUI.txtRearSonarDistCM.setText(Double.toString((Double.parseDouble(sensorDataGetSet.getbackSonarInches()) * 2.54)));
+		GuiSensorReadings.txtRearSonarDistInch.setText(sensorDataGetSet.getbackSonarInches());
+		GuiSensorReadings.txtRearSonarDistCM.setText(Double.toString((Double.parseDouble(sensorDataGetSet.getbackSonarInches()) * 2.54)));
 
 		// IR Sensor Panel
-		GUI.txtFrontLeftIR.setText(Double.toString((Double.parseDouble(leftIRSensor) * 2.54)));
-		GUI.txtFrontCenterIR.setText(Double.toString((Double.parseDouble(sensorDataGetSet.getcentreIRSensor()) * 2.54)));
-		GUI.txtFrontRightIR.setText(Double.toString((Double.parseDouble(rightIRSensor) * 2.54)));
+		GuiSensorReadings.txtFrontLeftIR.setText(Double.toString((Double.parseDouble(leftIRSensor) * 2.54)));
+		GuiSensorReadings.txtFrontCenterIR.setText(Double.toString((Double.parseDouble(sensorDataGetSet.getcentreIRSensor()) * 2.54)));
+		GuiSensorReadings.txtFrontRightIR.setText(Double.toString((Double.parseDouble(rightIRSensor) * 2.54)));
 
 	}
 

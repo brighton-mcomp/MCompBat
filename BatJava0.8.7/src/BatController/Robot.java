@@ -14,7 +14,7 @@ public class Robot {
 	private int centerFrontX = 0;
 	private int centerBackX  = 0;
 	private int centerBackY  = 0;
-	private int sqSize       = 3; // set this to map square size ( mapGui class x or y / window size (840) )
+	private int sqSize       = 4; // set this to map square size ( mapGui class x or y / window size (840) )
 
 	public Robot(int x,int y,int w,int h) {
 
@@ -48,10 +48,5 @@ public class Robot {
 		
 		centerBackY = topY + height;
 		centerBackX = topX + ( width/2 ) + sqSize;
-	}
-	
-	public void setSqSize(int size)
-	{
-		sqSize=size;
 	}
 }

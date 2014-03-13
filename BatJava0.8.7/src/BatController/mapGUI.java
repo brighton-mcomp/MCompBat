@@ -29,14 +29,14 @@ public class mapGUI {
 
 		mapFrame.getContentPane().add( new Map() );
 		mapFrame.setVisible( true );  // displays frame
-		mapFrame.setSize( 605, 628 );//*******************//
-		//mapFrame.getContentPane().setSize( 800, 800 );
-		mapFrame.setResizable( true );
+		mapFrame.setSize( 805, 828 );
+		mapFrame.getContentPane().setSize( 800, 800 );
+		mapFrame.setResizable( false );
 		mapFrame.setLocationRelativeTo( null );
 		mapFrame.setDefaultCloseOperation( WindowConstants.DISPOSE_ON_CLOSE );// allows the map to close separate from main GUI
 		serialClass = instance;
 	}
- 
+
 	/**
 	 * inner class
 	 * @author S Murphy
@@ -118,8 +118,7 @@ public class mapGUI {
 			double wdOfX = width / rowY;
 
 			int sqSize = (int) htOfX;
-			System.out.println(sqSize);//*******************//
-			
+
 			if ( st == false ) {
 
 				int robotStartElavationInRows = 25; // Change this to move starting position of robot (up or down on map)
@@ -127,7 +126,6 @@ public class mapGUI {
 				int robotStartY = (int) ( ( colX*htOfX ) - ( htOfX * robotStartElavationInRows ) ); // robots Y start position on map (passed to g.fillRect)
 				robot.setX( robotStartX );
 				robot.setY( robotStartY );
-				robot.setSqSize(sqSize);//*******************//
 				System.out.println( robotStartX );
 				System.out.println( robotStartY );
 				st = true;
